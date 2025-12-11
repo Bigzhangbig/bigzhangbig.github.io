@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="页面未找到 - 404错误">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - 页面未找到</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-content {
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: var(--text-color);
+        }
+        
+        .error-message {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .error-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-links .btn {
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">我的博客</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="catalog.html">目录</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="error-page">
+        <div class="error-content">
+            <h2 class="error-code">404</h2>
+            <h3 class="error-title">页面未找到</h3>
+            <p class="error-message">抱歉，您访问的页面不存在或已被移除。</p>
+            <div class="error-links">
+                <a href="index.html" class="btn">返回首页</a>
+                <a href="catalog.html" class="btn">浏览文章</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 我的博客. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
